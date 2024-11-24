@@ -9,9 +9,9 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # Bot tokeningizni kiriting
-TOKEN = "8154422973:AAHwER2hRlKoJl2XsWd7HAPX2s5k9XQ8V-o"
-CHANNEL = "@+sYDzraTgdGw1ZThi"  # Kanal username'ini kiriting
-bot_username = "test_123_ball_bot"
+TOKEN = "7419489164:AAGmZrFiYYiCxcFC4Ej8peWKnoKCJqf3CSs"
+CHANNEL = "@+4NZTop5xYR5hYzUy"  # Kanal username'ini kiriting
+bot_username = "Usmons_telegram_bot"
 
 
 
@@ -55,7 +55,7 @@ class UserForm(StatesGroup):
 # Obuna tekshiruvchi funksiya 
 async def check_subscription(user_id: int):
     try:
-        chat_member = await bot.get_chat_member(chat_id="-1001963360862", user_id=user_id)
+        chat_member = await bot.get_chat_member(chat_id="-1002388361331", user_id=user_id)
         return chat_member.status in ['member', 'administrator', 'creator']
     except Exception as e:
         print(f"Error checking subscription: {e}")
@@ -324,7 +324,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
 
 
 
